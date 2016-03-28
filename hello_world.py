@@ -30,6 +30,7 @@ def jedi_name(first, last):
         </h1>
     """
     return html.format(jedi_name.title())
-
-app.run(host=environ['IP'],
-        port=int(environ['PORT']))
+    
+if __name__ == "__main__":
+    app.run(host=environ['IP'],
+            port=int(environ['PORT']))
